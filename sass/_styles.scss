@@ -1,0 +1,369 @@
+/***------------------------------------------------------
+
+    // Website Name: Junior Dev Jobs
+    // URL: juniordevjobs.io
+    // Version: 1.0
+
+------------------------------------------------------***/
+/***------------------------------------------------------
+**** CSS INDEX
+------------------------------------------------------***/
+/***------------------------------------------------------
+**** 00.    Font @import
+**** 01.    General Styles
+**** 02.    Navigation
+**** 03.    Header
+**** 04.    Service
+**** 05.    Footer
+------------------------------------------------------***/
+/***------------------------------------------------------
+**** 00. Font @import
+------------------------------------------------------***/
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,800');
+
+/***------------------------------------------------------
+**** 01. General Styles
+------------------------------------------------------***/
+body {
+  font-family: 'Nunito', sans-serif;
+  color: $ju_text;
+}
+
+::-webkit-input-placeholder {
+  color: $ju_text;
+  font-size: .7rem;
+  font-style: italic;
+}
+
+::-moz-placeholder {
+  font-size: .7rem;
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  font-size: .7rem;
+  font-style: italic;
+}
+
+:-moz-placeholder {
+  font-size: .7rem;
+  font-style: italic;
+}
+
+// Style for HR
+.border-sm {
+  border: 0 none;
+  border-top: 2px solid $ju_purple;
+  background: none;
+  height: 0;
+  width: 50px;
+}
+input {
+  outline: none;
+}
+
+
+
+/***------------------------------------------------------
+**** 02. Navigation
+------------------------------------------------------***/
+#main_nav {
+  background: white;
+  -webkit-box-shadow: $zero $zero $five $three rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: $zero $zero $five $three rgba(0, 0, 0, 0.1);
+  box-shadow: $zero $zero $five $three rgba(0, 0, 0, 0.1);
+  .navbar-brand {
+    font-weight: 800;
+    color: $ju_text;
+  }
+  .form-inline {
+    margin-top: $fifteen;
+    @include media-breakpoint-down(md) {
+      margin-top: $ten;
+      margin-bottom: $fifteen;
+    }
+    .btn-sm {
+      padding: 0.35rem 0.5rem 0.25rem;
+    }
+  }
+
+  .custom-toggler.navbar-toggler {
+    border-color: transparent;
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  @include media-breakpoint-only(xs) {
+    .custom-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(135, 87, 251, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      font-weight: 600;
+      font-size: 14px;
+      color: $ju_text;
+      @include media-breakpoint-only(xs) {
+        color: $ju_text;
+      }
+      padding: 1.2rem;
+      @include media-breakpoint-down(md) {
+        padding: 0.5rem 0rem;
+      }
+
+      &:hover,
+      &:focus {
+        color: $ju_purple;
+      }
+
+      &.active {
+        color: $ju_purple;
+      }
+
+    }
+  }
+
+}
+
+
+/***------------------------------------------------------
+**** 03. Header
+------------------------------------------------------***/
+#main_hdr {
+  background: $ju_light_bg url(../images/hdr_bg.svg) no-repeat;
+  background-position: right -150px;
+  border-bottom: 1px solid $ju_bg_border;
+  min-height: 500px;
+  padding: $forty $zero $ten;
+  @include media-breakpoint-only(xs) {
+    background: none;
+    min-height: 450px;
+  }
+  @include media-breakpoint-only(md) {
+    background-position: 180px -250px;
+    min-height: 380px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    background-position: 350px -240px;
+    min-height: 450px;
+  }
+  .header_content {
+    .header_text {
+      h1 {
+        font-weight: 800;
+        font-size: 42px;
+        color: $ju_text;
+        margin-top: $fifty;
+        @include media-breakpoint-down(md) {
+          font-size: 28px;
+          margin-top: $twenty-five;
+        }
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: $twenty;
+        color: $ju_subtitle_text;
+        @include media-breakpoint-down(md) {
+          font-size: 16px;
+          line-height: normal;
+        }
+      }
+    }
+    @include media-breakpoint-only(xs) {
+      text-align: center;
+    }
+  }
+  .header_img {
+    margin-top: $fifty;
+    @include media-breakpoint-only(xs) {
+      margin-top: $twenty-five;
+      padding-bottom: $twenty-five;
+    }
+    @include media-breakpoint-down(md) {
+      margin-top: $twenty-five;
+    }
+  }
+
+  .header_form {
+    margin-top: $twenty-five;
+    form#form_header {
+      .input-group {
+        background: white;
+        -webkit-box-shadow: $zero $zero $twenty $six rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: $zero $zero $twenty $six rgba(0, 0, 0, 0.1);
+        box-shadow: $zero $zero $twenty $six rgba(0, 0, 0, 0.1);
+        padding: $ten;
+        border-radius: $border-radius-sm;
+      }
+      .input-group {
+        .form-control {
+          border-radius: 0;
+          border: 0px solid $ju_bg_border;
+        }
+        .input-group-append {
+          .btn {
+            border-radius: $border-radius-sm;
+            padding: $fifteen $thirty-five;
+            font-weight: 700;
+          }
+        }
+      }
+      .form-check-label {
+        padding-left: .25em;
+
+      }
+      .form-check-inline {
+        margin-right: $ten;
+      }
+      [type="radio"] {
+        &:checked, &:not(:checked) {
+          position: absolute;
+          left: -9999px;
+        }
+        &:checked + label, &:not(:checked) + label {
+          position: relative;
+          padding-left: 28px;
+          cursor: pointer;
+          line-height: 20px;
+          display: inline-block;
+          color: $ju_text;
+        }
+        &:checked + label:before, &:not(:checked) + label:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 20px;
+          height: 20px;
+          border: 1px solid $ju_purple;
+          border-radius: 100%;
+          background: white;
+        }
+        &:checked + label:after {
+          content: '';
+          width: 12px;
+          height: 12px;
+          background: $ju_purple;
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          border-radius: 100%;
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+        }
+        &:not(:checked) + label:after {
+          content: '';
+          width: 12px;
+          height: 12px;
+          background: $ju_purple;
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          border-radius: 100%;
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+          opacity: 0;
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        &:checked + label:after {
+          opacity: 1;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+/***------------------------------------------------------
+**** 04. Service
+------------------------------------------------------***/
+#service {
+  padding: $seventy $zero;
+  text-align: center;
+  .service_title {
+    h2 {
+      font-size: 28px;
+      color: $ju_text;
+      font-weight: 800;
+    }
+  }
+  .service_content {
+    margin-top: $fifty;
+    .service_item {
+      margin-bottom: $fifty;
+      padding: $zero $twenty-five;
+      p {
+        font-weight: 700;
+        margin-top: $fifteen;
+      }
+    }
+  }
+  .service_form {
+    padding: $fifty $zero $zero;
+    @include media-breakpoint-only(xs) {
+      padding: $fifty $zero $zero;
+    }
+    h2 {
+      font-size: 28px;
+      color: $ju_text;
+      font-weight: 800;
+      margin-bottom: $thirty-five;
+    }
+    form#form_service {
+      .input-group {
+        background: white;
+        -webkit-box-shadow: $zero $zero $twenty $six rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: $zero $zero $twenty $six rgba(0, 0, 0, 0.1);
+        box-shadow: $zero $zero $twenty $six rgba(0, 0, 0, 0.1);
+        padding: $ten;
+        border-radius: $border-radius-sm;
+      }
+      .input-group {
+        .form-control {
+          border-radius: 0;
+          border: 0px solid $ju_bg_border;
+        }
+        .input-group-append {
+          .btn {
+            border-radius: $border-radius-sm;
+            padding: $fifteen $thirty-five;
+            font-weight: 700;
+          }
+        }
+      }
+      .form-check-label {
+        padding-left: .25em;
+      }
+      .form-check-inline {
+        margin-right: $ten;
+        margin-left: $twenty-five;
+      }
+    }
+  }
+
+}
+
+/***------------------------------------------------------
+**** 05. Footer
+------------------------------------------------------***/
+footer {
+  padding: $twenty $zero;
+  background: $ju_light_bg;
+  color: $ju_text;
+  text-align: center;
+  p {
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: $zero;
+    margin-top: $seven;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    @include media-breakpoint-only(xs) {
+      letter-spacing: 1px;
+    }
+  }
+}

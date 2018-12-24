@@ -1,0 +1,90 @@
+// BugBounty Variables
+
+// Colours
+
+$ju_text:                      #293643;
+$ju_purple:                    #8757FB;
+$ju_light_bg:                  #F9FCFF;
+$ju_bg_border:                 #EFF7FF;
+$ju_dark_bg:                   #2F3860;
+$ju_subtitle_text:             #5F6469;
+// Button Colours
+
+
+
+// Button Font Sizes
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1);
+$font-size-sm:                ($font-size-base * .75);
+
+// Border Radius
+$border-radius-none:          0;
+$border-radius-sm:            0.15em; // ~5px
+$border-radius-md:            0.3125em; // ~5px
+$border-radius-circular:      0.3125em; // ~5px
+
+// Text
+
+$letter_spacing_sm:           1px;
+$letter_spacing_md:           2px;
+$letter_spacing_lg:           5px;
+
+
+// Navbar
+$navbar-height:               70px !default;
+//$navbar-default-bg:           $white;
+//$navbar-default-border:       $white;
+
+// Table Breakpoint
+$breakpoint-alpha: 480px; // adjust to your needs
+
+// Values
+
+$zero                     :0px;
+$one                      :1px;
+$two                      :2px;
+$three                    :3px;
+$four                     :4px;
+$five                     :5px;
+$six                      :6px;
+$seven                    :7px;
+$eight                    :8px;
+$nine                     :9px;
+$ten                      :10px;
+$eleven                   :11px;
+$twelve                   :12px;
+$thirteen                 :13px;
+$fourteen                 :14px;
+$fifteen                  :15px;
+$twenty                   :20px;
+$twenty-five              :25px;
+$thirty                   :30px;
+$thirty-five              :35px;
+$forty                    :40px;
+$forty-five               :45px;
+$fifty                    :50px;
+$fifty-five               :55px;
+$sixty                    :60px;
+$sixty-five               :65px;
+$seventy                  :70px;
+$seventy-five             :75px;
+$eighty                   :80px;
+$eighty-five              :85px;
+$ninety                   :90px;
+$ninety-five              :95px;
+$hundred                  :100px;
+$hundred-ten              :110px;
+$hundred-twenty           :120px;
+$hundred-thirty           :130px;
+$hundred-forty            :140px;
+$hundred-fifty            :150px;
+$hundred-sixty            :160px;
+$hundred-seventy          :170px;
+$hundred-eighty           :180px;
+$hundred-ninety           :190px;
+$twohundred               :200px;
+
+// Media Queiries for iPad Pro
+$ipad-pro-portrait-breakpoint: "(min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1024px) and (max-width: 1024px)";
+$ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1366px) and (max-width: 1366px)";
